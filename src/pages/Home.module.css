@@ -1,0 +1,13 @@
+.home {
+    background-image: url('./../assets/home/background-home-mobile.jpg');
+}
+
+.home h2 {
+    color: white;
+}
+
+.home p {
+    margin-top: 2em;;
+    border: 5px solid green;
+    color: white;
+}
