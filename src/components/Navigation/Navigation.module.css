@@ -1,0 +1,179 @@
+.header { 
+    background: transparent;
+    padding-top: 50px;
+    margin: 0 auto 2em;
+    height: 70px;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2.35px;
+}
+
+.header nav button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+hr {
+    display: none;
+}
+
+.header nav ul {
+    background: hsla(0,0%,100%,.04);
+    backdrop-filter: blur(100px);
+    position: absolute;
+    width: 75%;
+    height: 80vh;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header nav ul li {
+    margin: 1.7em;
+    list-style-type: none;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: rgb(208, 214, 249);
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.header nav ul li a span{
+    color: white;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.header nav ul button {
+    margin: 2em;
+    align-self: flex-end;
+    list-style-type: none;
+    color: rgb(208, 214, 249);
+}
+
+.header .hide {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    
+    .header {
+        padding: 0;
+        height: 96px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .logo img {
+        max-width: 100%;
+        max-height: 100%;
+        width: 48px;
+        height: 48px;
+        position: relative;
+        left: 55px;
+    }
+
+    .header nav ul {
+        background: hsla(0,0%,100%,.04);
+        backdrop-filter: blur(100px);
+        position: static;
+        width: 450px;
+        height: 96px;
+        display: flex !important;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .header nav ul li {
+        margin: 0;
+        list-style-type: none;
+    }
+
+    .header nav ul li a {
+        font-size: 14px;
+    }
+
+    .header button {
+        display: none;
+    }
+
+    .header .hide {
+        display: block;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .header {
+      position: relative;
+       height: 160px;
+       align-items: flex-end;
+    }
+
+    .header nav ul {
+        background: hsla(0,0%,100%,.04);
+        backdrop-filter: blur(100px);
+        position: static;
+        width: 830px;
+        height: 120px;
+    
+    }
+
+    .header nav ul li a {
+        font-size: 16px;
+    }
+
+    .header .logo {
+      align-self: center;
+      margin-top: 3em;
+        
+    }
+
+    .header hr {
+        display: block;
+        align-self: center;
+        margin-top: 3em;
+        width: 16%;
+        position: relative;
+        right: -60px;
+    }
+
+}
+
+
+@media (min-width: 1128px) {
+    .header hr {
+       
+        width: 26%;
+        position: relative;
+        right: -60px;
+    }
+
+}
+
+
+@media (min-width: 1378px) {
+    .header hr {
+        width: 46%;
+        position: relative;
+        right: -80px;
+    }
+
+}
