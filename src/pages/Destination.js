@@ -1,17 +1,15 @@
 import { NavLink, useSearchParams } from 'react-router-dom';
 import Navigation from '../components/Navigation/Navigation';
 import classes from './Destination.module.css';
-import data from './../assets/data.json';
 
-const Destination = () => {
+const Destination = (props) => {
     let [searchParams] = useSearchParams();
     const place = searchParams.get("location")
-    const destination = data.destinations.find(p => p.name.toLowerCase() === place.toString());
+    const destination = props.destinations.find(p => p.name.toLowerCase() === place.toString());
     const img = `/destimationImg/image-${destination.name.toLowerCase()}.png`;
 
     return (<div className={`${classes.destination} main-container`}>
         <Navigation />
-
         <main>
             <div className={classes.place}>
                 <h2> <span>01</span>  pick your destination</h2>
@@ -42,7 +40,6 @@ const Destination = () => {
                 </div>
 
             </div>
-
         </main>
     </div>)
 }

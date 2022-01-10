@@ -3,14 +3,15 @@ import Crew from './pages/Crew';
 import Destination from './pages/Destination';
 import Home from './pages/Home';
 import Technology from './pages/Technology';
+import data from './assets/data.json';
 
 function App() {
   return (<>
       <Routes>
         <Route path='/' element={<Navigate replace to='/home' />} />
         <Route path='/home' element={<Home />} />
-        <Route path='/destination' element={<Destination />} />
-        <Route path='/crew' element={<Crew />} />
+        <Route path='/destination' element={<Destination destinations={data.destinations}/>} />
+        <Route path='/crew' element={<Crew crew={data.crew} />} />
         <Route path='/technology' element={<Technology />} />
         <Route path='/*' element={<Navigate replace to='/home' />} />
       </Routes>

@@ -28,7 +28,7 @@ const Navigation = () => {
                     <button onClick={toggleMenuHandler} >X</button>
                     <li> <NavLink  className={(navData => navData.isActive? classes.active : '')} to='/home'> <span>00</span> home </NavLink>  </li>
                     <li> <NavLink  className={(navData => navData.isActive? classes.active : '')} to='/destination?location=moon'> <span>01</span> destination </NavLink>  </li>
-                    <li> <NavLink  className={(navData => navData.isActive? classes.active : '')} to='/crew'> <span>02</span> crew </NavLink>  </li>
+                    <li> <NavLink  className={(navData => navData.isActive? classes.active : '')} to='/crew?member=douglas'> <span>02</span> crew </NavLink>  </li>
                     <li> <NavLink  className={(navData => navData.isActive? classes.active : '')} to='/technology'> <span>03</span> technology </NavLink>  </li>
                 </ul>
             </nav>
