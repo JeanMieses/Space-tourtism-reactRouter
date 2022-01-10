@@ -2,14 +2,10 @@
     background-image: url('./../assets/home/background-home-mobile.jpg');
 }
 
-.home h2 {
-    color: white;
-}
-
 .home p {
     margin-top: 2em;
-    ;
     color: white;
+
 }
 
 .home main {
@@ -41,6 +37,7 @@
 .home h1 {
     font-size: 80px;
     text-align: center;
+
 }
 
 .home h2 {
@@ -60,7 +57,6 @@
     text-align: center;
     color: #D0D6F9;
     line-height: 2;
-    font-weight: lighter;
 }
 
 @media (max-width: 320px) {
@@ -110,7 +106,7 @@
     }
 
     .home main {
-        margin-top: 20em;
+        margin: 20em auto;
         display: flex;
         flex-direction: row;
         align-items: flex-end;
@@ -118,7 +114,7 @@
     }
 
     .home main div {
-        width: 450px;
+        width: 400px;
         height: 382px;
         margin: 0;
         display: flex;
@@ -140,8 +136,8 @@
     }
 
     .home .explore {
-        width: 324px;
-        height: 324px;
+        width: 384px;
+        height: 384px;
         margin-bottom: 2em;
     }
 }

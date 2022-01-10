@@ -19,7 +19,7 @@ const Home = () => {
                 </p>
                </div>
                 
-                <div  onClick={() =>  navigate('/destination', {replace: false})} className={classes.explore}>
+                <div  onClick={() =>  navigate('/destination/moon', {replace: false})} className={classes.explore}>
                     <h3>explore</h3>
                 </div>
 

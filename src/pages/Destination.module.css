@@ -1,3 +1,237 @@
 .destination {
     background-image: url('./../assets/destination/background-destination-mobile.jpg');
 }
+
+.destination main {
+    width: 90%;
+    margin: 3em auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+.place {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description h1 {
+    text-align: center;
+    margin-bottom: 0.4em;
+    font-size: 56px;
+}
+
+.place h2 {
+    font-size: 16px;
+}
+
+.place h2 span {
+    opacity: 0.45;
+    margin-right: 10px;
+}
+
+.description p {
+    text-align: center;
+    color: #D0D6F9;
+    font-size: 15px;
+    line-height: 1.8;
+    width: 95%;
+    margin: 1em auto;
+}
+
+.place img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 170px;
+    height: 170px;
+    margin: 2em auto;
+}
+
+.description ul {
+    width: 80%;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.description ul li {
+    list-style-type: none;
+}
+
+.description ul li a {
+    text-decoration: none;
+    color: #D0D6F9;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.travel {
+    border-top: 1px solid #979797;
+    width: 90%;
+    margin: 2em auto;
+}
+
+.travel div p {
+    text-transform: uppercase;
+    font-size: 14px;
+    ;
+    margin: 1.1em auto;
+}
+
+.travel div h3 {
+    text-transform: uppercase;
+    font-size: 28px;
+    ;
+    text-align: center;
+}
+
+.travel :nth-of-type(1) {
+    margin-bottom: 1em;
+}
+
+.description a.active,
+.description a:hover,
+.description a:active {
+  color: #fff;
+  padding-bottom: 0.25rem;
+  border-bottom: 4px solid #fff;
+}
+
+/* --------------------Tablet view---------------------------------------------- */
+
+@media (min-width: 768px) {
+    .destination {
+        background-image: url('./../assets/destination/background-destination-tablet.jpg');
+    }
+
+    .place h2 {
+        font-size: 20px;
+        align-self: flex-start;
+    }
+
+    .place img {
+        width: 300px;
+        height: 300px;
+        margin: 2em auto;
+    }
+    
+    .description {
+        padding-bottom: 50px;
+    }
+
+    .description ul {
+        width: 285.5px;
+    }
+
+    .description ul li a {
+        font-size: 16px;
+    }
+
+    .description h1 {
+        font-size: 80px;
+    }
+
+    .description p {
+        width: 573px;
+        font-size: 16px;
+        line-height: 2;
+    }
+
+    .travel {
+        width: 573px;
+        height: 90px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 3em auto;
+    }
+
+    .travel div {
+        margin-top: 2.5em;
+        height: 90px;
+        width: 200px;
+    }
+
+    .travel div p {
+        text-transform: uppercase;
+        font-size: 14px;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+
+    .travel div h3 {
+        text-transform: uppercase;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .travel :nth-of-type(1) {
+        margin-bottom: 0em;
+    }
+
+}
+
+/* --------------------destop view---------------------------------------------- */
+@media (min-width: 1025px) {
+    .destination {
+        background-image: url('./../assets/destination/background-destination-desktop.jpg');
+    }
+
+    .destination main {
+        width: 90%;
+        margin: 12em auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .place img {
+        width: 445px;
+        height: 445px;
+        margin: 4em auto;
+    }
+
+    .place h2 {
+        font-size: 28px;
+    }
+
+
+    .description {
+        /* border: 1px solid red; */
+        width: 445px;
+        height: 472px;
+    }
+
+    .description h1 {
+        font-size: 100px;
+        text-align: left;
+    }
+
+    .description ul {
+        margin: 2em 0;
+    }
+
+    .description p {
+        text-align: left;
+        width: 444px;
+        font-size: 18px;
+    }
+
+    .travel {
+        width: 100%;
+        height: 61px;
+    }
+
+    .travel div {
+        margin: 1em 0;
+        
+    }
+
+}
