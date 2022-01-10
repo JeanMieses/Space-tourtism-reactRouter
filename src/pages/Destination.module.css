@@ -1,5 +1,6 @@
 .destination {
     background-image: url('./../assets/destination/background-destination-mobile.jpg');
+    min-height: 100vh;
 }
 
 .destination main {
