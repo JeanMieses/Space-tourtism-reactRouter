@@ -12,7 +12,7 @@ function App() {
         <Route path='/home' element={<Home />} />
         <Route path='/destination' element={<Destination destinations={data.destinations}/>} />
         <Route path='/crew' element={<Crew crew={data.crew} />} />
-        <Route path='/technology' element={<Technology />} />
+        <Route path='/technology' element={<Technology technology={data.technology} />} />
         <Route path='/*' element={<Navigate replace to='/home' />} />
       </Routes>
 

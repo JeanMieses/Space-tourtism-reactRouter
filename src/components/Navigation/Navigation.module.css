@@ -1,4 +1,4 @@
-.header { 
+.header {
     background: transparent;
     padding-top: 50px;
     margin: 0 auto 2em;
@@ -32,7 +32,7 @@ hr {
 }
 
 .header nav ul {
-    background: hsla(0,0%,100%,.04);
+    background: hsla(0, 0%, 100%, .04);
     backdrop-filter: blur(100px);
     position: absolute;
     width: 75%;
@@ -56,7 +56,7 @@ hr {
     white-space: 2.36px;
 }
 
-.header nav ul li a span{
+.header nav ul li a span {
     color: white;
     font-weight: bold;
     margin-right: 3px;
@@ -76,13 +76,13 @@ hr {
 .header a.active,
 .header a:hover,
 .header a:active {
-  color: #fff;
-  padding-bottom: 0.25rem;
-  border-bottom: 4px solid #fff;
+    color: #fff;
+    padding-bottom: 0.25rem;
+    border-bottom: 4px solid #fff;
 }
 
 @media (min-width: 768px) {
-    
+
     .header {
         padding: 0;
         height: 96px;
@@ -100,7 +100,7 @@ hr {
     }
 
     .header nav ul {
-        background: hsla(0,0%,100%,.04);
+        background: hsla(0, 0%, 100%, .04);
         backdrop-filter: blur(100px);
         position: static;
         width: 450px;
@@ -133,13 +133,13 @@ hr {
 
 @media (min-width: 1025px) {
     .header {
-      position: relative;
-       height: 160px;
-       align-items: flex-end;
+        position: relative;
+        height: 160px;
+        align-items: flex-end;
     }
 
     .header nav ul {
-        background: hsla(0,0%,100%,.04);
+        background: hsla(0, 0%, 100%, .04);
         backdrop-filter: blur(100px);
         position: static;
         width: 830px;
@@ -151,9 +151,9 @@ hr {
     }
 
     .header .logo {
-      align-self: center;
-      margin-top: 3em;
-        
+        align-self: center;
+        margin-top: 3em;
+
     }
 
     .header hr {
@@ -169,7 +169,7 @@ hr {
 
 @media (min-width: 1128px) {
     .header hr {
-        
+
         width: 26%;
         position: relative;
         right: -60px;
