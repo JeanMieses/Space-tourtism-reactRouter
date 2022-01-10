@@ -41,6 +41,7 @@ hr {
     display: flex;
     flex-direction: column;
     z-index: 100;
+    overflow-y: scroll;
 }
 
 .header nav ul li {
