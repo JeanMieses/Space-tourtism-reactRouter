@@ -96,9 +96,9 @@
 .description a.active,
 .description a:hover,
 .description a:active {
-  color: #fff;
-  padding-bottom: 0.25rem;
-  border-bottom: 4px solid #fff;
+    color: #fff;
+    padding-bottom: 0.25rem;
+    border-bottom: 4px solid #fff;
 }
 
 /* --------------------Tablet view---------------------------------------------- */
@@ -118,7 +118,7 @@
         height: 300px;
         margin: 2em auto;
     }
-    
+
     .description {
         padding-bottom: 50px;
     }
@@ -202,9 +202,7 @@
         font-size: 28px;
     }
 
-
     .description {
-        /* border: 1px solid red; */
         width: 445px;
         height: 472px;
     }
@@ -227,11 +225,22 @@
     .travel {
         width: 100%;
         height: 61px;
+        justify-content: flex-start;
     }
 
     .travel div {
         margin: 1em 0;
-        
+
     }
+
+    .travel div p {
+        text-align: left;
+        width: 100%;
+    }
+
+    .travel div h3 {
+        text-align: left;
+    }
+
 
 }

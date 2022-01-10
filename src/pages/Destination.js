@@ -1,10 +1,11 @@
-import { useParams, NavLink } from 'react-router-dom';
+import { NavLink, useSearchParams } from 'react-router-dom';
 import Navigation from '../components/Navigation/Navigation';
 import classes from './Destination.module.css';
 import data from './../assets/data.json';
 
 const Destination = () => {
-    const { place } = useParams();
+    let [searchParams] = useSearchParams();
+    const place = searchParams.get("location")
     const destination = data.destinations.find(p => p.name.toLowerCase() === place.toString());
     const img = `/destimationImg/image-${destination.name.toLowerCase()}.png`;
 
@@ -19,10 +20,10 @@ const Destination = () => {
 
             <div className={classes.description}>
                 <ul>
-                    <li><NavLink className={(navData) => navData.isActive? classes.active : ''} to='/destination/moon'>moon</NavLink></li>
-                    <li><NavLink className={(navData) => navData.isActive? classes.active : ''} to='/destination/mars'>mars</NavLink></li>
-                    <li><NavLink className={(navData) => navData.isActive? classes.active : ''} to='/destination/europa'>europa</NavLink></li>
-                    <li><NavLink className={(navData) => navData.isActive? classes.active : ''} to='/destination/titan'>titan</NavLink></li>
+                    <li><NavLink className={() => place === 'moon' ? classes.active : ''} to='/destination?location=moon'>moon</NavLink></li>
+                    <li><NavLink className={() => place === 'mars' ? classes.active : ''} to='/destination?location=mars'>mars</NavLink></li>
+                    <li><NavLink className={() => place === 'europa' ? classes.active : ''} to='/destination?location=europa'>europa</NavLink></li>
+                    <li><NavLink className={() => place === 'titan' ? classes.active : ''} to='/destination?location=titan'>titan</NavLink></li>
                 </ul>
 
                 <h1> {destination.name} </h1>
@@ -30,13 +31,13 @@ const Destination = () => {
 
                 <div className={classes.travel}>
                     <div>
-                    <p>avg. distance</p>
-                    <h3> {destination.distance} </h3>
+                        <p>avg. distance</p>
+                        <h3> {destination.distance} </h3>
                     </div>
 
                     <div>
-                    <p>est. travel time</p>
-                    <h3> {destination.travel} </h3>
+                        <p>est. travel time</p>
+                        <h3> {destination.travel} </h3>
                     </div>
                 </div>
 

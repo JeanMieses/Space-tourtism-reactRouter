@@ -26,4 +26,5 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+  z-index: -1;
 }
