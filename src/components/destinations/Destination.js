@@ -1,5 +1,5 @@
 import { NavLink, useSearchParams } from 'react-router-dom';
-import Navigation from './../navigation/Navigation';
+import Navigation from '../Navigation/Navigation';
 import classes from './Destination.module.css';
 
 const Destination = (props) => {

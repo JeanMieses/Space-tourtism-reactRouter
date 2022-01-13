@@ -1,5 +1,5 @@
 import { NavLink, useSearchParams } from 'react-router-dom';
-import Navigation from './../navigation/Navigation';
+import Navigation from '../Navigation/Navigation';
 import classes from './Technology.module.css'
 
 const Technology = (props) => {
