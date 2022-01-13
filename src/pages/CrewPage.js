@@ -1,7 +1,7 @@
-import Crew from './../components/crew/Crew';
+
 
 const CrewPage = (props) => {
-    return <Crew  crew={props.crew} />
+    return <h1>Crew</h1>
 }
 
 
