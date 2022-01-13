@@ -91,6 +91,8 @@
     align-items: center;
 }
 
+
+/* -----------------tablet view ------------------------ */
 @media (min-width: 768px) {
 
     .technology main h1 {
@@ -131,6 +133,8 @@
     }
 }
 
+
+/* ------------------destop view------------------------ */
 @media (min-width: 1025px) {
     .technology main h1 {
         font-size: 49px;
@@ -158,7 +162,7 @@
     }
 
     .technology main {
-        margin-top: 10em;
+        margin-top: 8em;
     }
 
     .technology main div {

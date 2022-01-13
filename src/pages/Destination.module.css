@@ -1,6 +1,6 @@
 .destination {
     background-image: url('./../assets/destination/background-destination-mobile.jpg');
-    min-height: 100vh;
+ 
 }
 
 .destination main {
@@ -186,7 +186,7 @@
 
     .destination main {
         width: 90%;
-        margin: 12em auto;
+        height: 100vh;
         display: flex;
         flex-direction: row;
         justify-content: space-around;

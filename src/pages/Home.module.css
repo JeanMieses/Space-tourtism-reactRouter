@@ -1,6 +1,5 @@
 .home {
     background-image: url('./../assets/home/background-home-mobile.jpg');
-    min-height: 100vh;
 }
 
 .home p {
@@ -107,16 +106,17 @@
     }
 
     .home main {
-        margin: 20em auto;
+        margin: 0;
+        height: 100vh;
         display: flex;
         flex-direction: row;
-        align-items: flex-end;
+        align-items: center;
         justify-content: space-around;
     }
 
     .home main div {
-        width: 400px;
-        height: 382px;
+        width: 384px;
+        height: 302px;
         margin: 0;
         display: flex;
         flex-direction: column;
@@ -124,7 +124,7 @@
     }
 
     .home h1 {
-        font-size: 150px;
+        font-size: 120px;
     }
 
     .home h2 {
