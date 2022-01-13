@@ -1,5 +1,5 @@
 .home {
-    background-image: url('./../../assets/home/background-home-mobile.jpg');
+    background-image: url('./../assets/home/background-home-mobile.jpg');
 }
 
 .home p {
@@ -68,7 +68,7 @@
 /* -------------------tablet view------------------------- */
 @media (width: 768px) {
     .home {
-        background-image: url('./../../assets/home/background-home-tablet.jpg');
+        background-image: url('./../assets/home/background-home-tablet.jpg');
     }
 
     .home main div {
@@ -102,8 +102,7 @@
 /* ---------------destop vieww---------------------- */
 @media(min-width: 1024px) {
     .home {
-        background-image: url('./../../assets/home/background-home-desktop.jpg');
-    }
+        background-image: url('./../assets/home/background-home-desktop.jpg');    }
 
     .home main {
         margin: 0;

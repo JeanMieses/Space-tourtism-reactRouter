@@ -1,4 +1,4 @@
-import Destination from "../components/destinations/Destination";
+import Destination from "../components/Destination";
 
 const DestinationPage = (props) => {
     return <Destination destinations={props.destinations}/>

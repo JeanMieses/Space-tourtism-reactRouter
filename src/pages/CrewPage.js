@@ -1,4 +1,4 @@
-import Crew from './../components/crew/Crew';
+import Crew from '../components/Crew';
 
 const CrewPage = (props) => {
     return <Crew crew={props.crew} />
