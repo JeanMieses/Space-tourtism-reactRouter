@@ -1,5 +1,5 @@
 .crew {
-    background-image: url('./../assets/crew/background-crew-mobile.jpg');
+    background-image: url('./../../assets/crew/background-crew-mobile.jpg');
 }
 
 .crew main {
@@ -90,7 +90,7 @@
 /* ---------------------tablet view------------------------------------- */
 @media (min-width: 768px) {
     .crew {
-        background-image: url('./../assets/crew/background-crew-tablet.jpg');
+        background-image: url('./../../assets/crew/background-crew-tablet.jpg');
     }
 
     .crew main h1 {
@@ -146,7 +146,7 @@
 
 @media (min-width: 1108px) {
     .crew {
-        background-image: url('./../assets/crew/background-crew-desktop.jpg');
+        background-image: url('./../../assets/crew/background-crew-desktop.jpg');
     }
 
     .crew main h1 {

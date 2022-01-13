@@ -1,5 +1,5 @@
 import { NavLink, useSearchParams } from 'react-router-dom';
-import Navigation from '../components/Navigation/Navigation';
+import Navigation from '../navigation/Navigation';
 import classes from './Destination.module.css';
 
 const Destination = (props) => {
@@ -13,7 +13,7 @@ const Destination = (props) => {
         <main>
             <div className={classes.place}>
                 <h2> <span>01</span>  pick your destination</h2>
-                <img src={img} alt='destination' />
+                <img src={img} alt={destination.name} />
             </div>
 
             <div className={classes.description}>

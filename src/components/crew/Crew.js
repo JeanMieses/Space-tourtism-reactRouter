@@ -1,5 +1,5 @@
 import { NavLink, useSearchParams } from 'react-router-dom';
-import Navigation from '../components/Navigation/Navigation';
+import Navigation from '../navigation/Navigation';
 import classes from './Crew.module.css';
 
 const Crew = (props) => {
@@ -14,7 +14,7 @@ const Crew = (props) => {
             <h2> <span>02</span> meet you crew </h2>
             <div>
                 <div className={classes.image}>
-                    <img src={img} />
+                    <img src={img} alt={member.name}/>
                 </div>
 
                 <div className={classes.bio}>

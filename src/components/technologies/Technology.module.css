@@ -1,5 +1,5 @@
 .technology {
-    background-image: url('./../assets/technology/background-technology-mobile.jpg');
+    background-image: url('./../../assets/technology/background-technology-mobile.jpg');
 }
 
 .technology main h1 {
@@ -94,6 +94,9 @@
 
 /* -----------------tablet view ------------------------ */
 @media (min-width: 768px) {
+    .technology {
+        background-image: url('./../../assets/technology/background-technology-tablet.jpg');
+    }
 
     .technology main h1 {
         font-size: 40px;
@@ -136,6 +139,10 @@
 
 /* ------------------destop view------------------------ */
 @media (min-width: 1025px) {
+    .technology {
+        background-image: url('./../../assets/technology/background-technology-desktop.jpg');
+    }
+
     .technology main h1 {
         font-size: 49px;
         margin-bottom: 0.5em;
@@ -146,7 +153,6 @@
         text-align: left;
         width: 40%;
         margin: 0;
-        /* border: 1px solid red; */
         text-align: center;  
     }
 

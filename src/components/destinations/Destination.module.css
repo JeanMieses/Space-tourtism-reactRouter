@@ -1,5 +1,5 @@
 .destination {
-    background-image: url('./../assets/destination/background-destination-mobile.jpg');
+    background-image: url('./../../assets/destination/background-destination-mobile.jpg');
  
 }
 
@@ -106,7 +106,7 @@
 
 @media (min-width: 768px) {
     .destination {
-        background-image: url('./../assets/destination/background-destination-tablet.jpg');
+        background-image: url('./../../assets/destination/background-destination-tablet.jpg');
     }
 
     .place h2 {
@@ -181,7 +181,7 @@
 /* --------------------destop view---------------------------------------------- */
 @media (min-width: 1025px) {
     .destination {
-        background-image: url('./../assets/destination/background-destination-desktop.jpg');
+        background-image: url('./../../assets/destination/background-destination-desktop.jpg');
     }
 
     .destination main {

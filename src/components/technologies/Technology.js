@@ -1,5 +1,5 @@
 import { NavLink, useSearchParams } from 'react-router-dom';
-import Navigation from '../components/Navigation/Navigation';
+import Navigation from '../navigation/Navigation';
 import classes from './Technology.module.css'
 
 const Technology = (props) => {
@@ -9,7 +9,6 @@ const Technology = (props) => {
     const technology = props.technology.find(t => t.name.toLowerCase().includes(tech));
     const img = `/technology/${technology.name.toLowerCase().replace(' ', '')}.jpg`;
 
-    console.log(props.technology);
 
     return (<div className={`${classes.technology} main-container`}>
         <Navigation />
@@ -18,7 +17,7 @@ const Technology = (props) => {
 
             <div>
                 <div className={classes.image}>
-                    <img src={img} />
+                    <img src={img} alt={technology.name}/>
                 </div>
 
                 <div className={classes.description}>
