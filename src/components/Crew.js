@@ -19,10 +19,10 @@ const Crew = (props) => {
 
                 <div className={classes.bio}>
                     <ul>
-                        <li> <NavLink to='/crew/?member=douglas'></NavLink> </li>
-                        <li> <NavLink to='/crew/?member=mark'></NavLink> </li>
-                        <li> <NavLink to='/crew/?member=victor'></NavLink> </li>
-                        <li> <NavLink to='/crew/?member=anousheh'></NavLink> </li>
+                        <li> <NavLink className={() => findMember==='douglas'? classes.active: ''} to='/crew/?member=douglas'></NavLink> </li>
+                        <li> <NavLink className={() => findMember === 'mark'? classes.active: ''} to='/crew/?member=mark'></NavLink> </li>
+                        <li> <NavLink className={() => findMember === 'victor'? classes.active: ''} to='/crew/?member=victor'></NavLink> </li>
+                        <li> <NavLink className={() => findMember === 'anousheh'? classes.active: ''} to='/crew/?member=anousheh'></NavLink> </li>
                     </ul>
 
                     <div>

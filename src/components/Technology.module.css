@@ -82,6 +82,7 @@
 }
 
 .technology main .description ul li a {
+    border-radius: 50%;
     color: #fff;
     width: 100%;
     height: 100%;
@@ -91,6 +92,15 @@
     align-items: center;
 }
 
+.description a.active,
+.description a:hover,
+.description a:active {
+    color: #0B0D17 !important;
+    background-color:  #fff;
+    transition-property: background-color;
+    transition-timing-function: ease-in;
+    transition-delay: 75ms;
+}
 
 /* -----------------tablet view ------------------------ */
 @media (min-width: 768px) {

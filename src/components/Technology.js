@@ -22,9 +22,9 @@ const Technology = (props) => {
 
                 <div className={classes.description}>
                     <ul>
-                        <li> <NavLink to='/technology?technology=launch'>1</NavLink> </li>
-                        <li> <NavLink to='/technology?technology=spaceport'>2</NavLink> </li>
-                        <li> <NavLink to='/technology?technology=capsule'>3</NavLink> </li>
+                        <li> <NavLink className={() => tech === 'launch'? classes.active : ''} to='/technology?technology=launch'>1</NavLink> </li>
+                        <li> <NavLink className={() => tech === 'spaceport'? classes.active : ''} to='/technology?technology=spaceport'>2</NavLink> </li>
+                        <li> <NavLink className={() => tech=== 'capsule'? classes.active : ''} to='/technology?technology=capsule'>3</NavLink> </li>
                     </ul>
 
                     <div>

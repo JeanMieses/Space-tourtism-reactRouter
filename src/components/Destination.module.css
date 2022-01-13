@@ -1,6 +1,5 @@
 .destination {
     background-image: url('./../assets/destination/background-destination-mobile.jpg');
- 
 }
 
 .destination main {
@@ -100,6 +99,9 @@
     color: #fff;
     padding-bottom: 0.25rem;
     border-bottom: 4px solid #fff;
+    transition-property: background-color;
+    transition-timing-function: ease-in;
+    transition-delay: 75ms;
 }
 
 /* --------------------Tablet view---------------------------------------------- */
@@ -193,6 +195,10 @@
         align-items: center;
     }
 
+    .place {
+        margin: 0;
+    }
+
     .place img {
         width: 445px;
         height: 445px;
@@ -220,6 +226,10 @@
     .description p {
         text-align: left;
         width: 444px;
+        font-size: 21px;
+    }
+
+    .description ul li a {
         font-size: 18px;
     }
 
@@ -242,5 +252,8 @@
     .travel div h3 {
         text-align: left;
     }
-
+    
+    .travel :nth-of-type(1) {
+        margin-bottom: 0em;
+    }
 }
