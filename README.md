@@ -27,7 +27,7 @@ Users should be able to:
 - View each page and be able to toggle between the tabs to see new information
 
 ### Screenshot
-
+![image](https://user-images.githubusercontent.com/71618218/149849272-a459762d-5619-4f8c-9845-8b4aae5034fe.png)
 
 
 ### Links
